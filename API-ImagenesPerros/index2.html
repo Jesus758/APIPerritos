@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>2da Pagina</title>
+</head>
+<body id="pagRandom">
+<div id="Segpagina">
+    <button id="btnRandom">HAZME CLICK</button>
+</div>  
+<!-- Aqui se introduce la lista de razas que se ve en el -->
+<div id="Contenedor-mascotas"></div>
+<!-- Aqui se introduce el listado de la paginación de control de la cantidad de elementos presentes-->  
+<div id="Paginacion"></div>
+<!-- Aqui se coloca un popup para cada nombre, como un boton que abre la imagen de los perritos a consultar -->
+<div id="overlay" class="overlay">
+    <div class="bloco">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <div class="popup" id="popup"></div>
+    </div>
+</div>
+<script src="random.js"></script>    
+</body>
+</html>
