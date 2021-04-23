@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">    
@@ -13,11 +14,22 @@
 <body>
     <!-- Menu de Navegación-->
 <header>
-    <nav class="navbar">
-        <li id="nav-link"><a href="#">INICIO</a></li>
-        <li id="nav-link"><a href="index2.html" target="_blank">RANDOM</a></li>
-        <li id="nav-link"><a href="#">RAZAS</a></li>
-    </nav>
+    <div class="container-header">
+         <!-- Icono de Menú de Hamburguesa-->
+         <div id="menuHambur" >
+            <div id="burger"></div>
+            <div id="burger"></div>
+            <div id="burger"></div>        
+        </div>
+        <!-- Menu de Inicio -->
+        <nav class="navbar">
+            <li id="nav-link" ><a href="#">INICIO</a></li>
+            <li id="nav-link" ><a href="index2.html" target="_blank">RANDOM</a></li>
+            <li id="nav-link" ><a href="index3.html" target="_blank">RAZAS</a></li>
+        </nav>
+       
+    </div>
+  
 </header>
 
 <!-- Presentación de pagina y productos -->
@@ -27,15 +39,22 @@
     </div>
 
 <!-- Actualizar para colocar un carrusel -->
+<div class="container">
     <div id="imagen-brand">
-        <div class="card">
-        <img src="imagenes/pexels-anna-shvets-4588435.jpg" alt="hasta ahora imagen de referencia">
+        <div id="perrito1" class="card">
+            <img src="./imagenes/pexels-josh-hild-3009441.jpg" alt="hasta ahora imagen de referencia">
+            <p>Cual es la raza de este perrito?<br>Quieres Saber de tu Perrito</p>
+        </div>
+
+        <div id="perrito2" class="card">
+            <img src="./imagenes/pexels-lisa-fotios-791862.jpg" alt="hasta ahora imagen de referencia">
+            <p>Cual es la raza de este perrito?<br>Quieres Saber de tu Perrito</p>
+        
         </div>
     </div>
-    
-
+   
 <!-- Previsto instalar un API de consulta de consejos de cuidado de perritos en General -->
-    <section>
+    <section id="frase-completa">
         <!-- Aqui va una consula de una API sobre frases de perritos o porque saber las razas de los perros -->
         <div id="contenedor-frases">
             <p id="frases-perros"> 
@@ -44,6 +63,9 @@
         </div>
     </section>
 
+
+</div>
+ 
 </main>
 
 <!-- Puntos de contacto  // Se debe agregar un Hover a la referencia de Impact Green Marketing-->
@@ -52,5 +74,6 @@
         <li><a href="www.impactgreenmarketing.com" style=" color: rgb(199, 231, 199);">Elaborador por @ImpactGreenMarketing</a><br>&copy;Copyright 2021 </li>
         <li>CONTACTOS</li>       
 </footer>
+<script src="index.js"></script>
 </body>
 </html>

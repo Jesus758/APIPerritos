@@ -1,0 +1,116 @@
+/* Hoja de estilo auxiliar para aprendizaje */
+
+#burger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#menuHambur {
+    visibility: hidden;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+    
+}
+
+/* Media Query de la Pagina Principal */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        width: 100%;
+    }
+
+    .container-header {
+        justify-content: center;
+    }
+
+    #menuHambur {
+        margin-top: 5px;
+        visibility: visible;
+        position: absolute;
+        justify-content: center;
+        
+    } 
+
+    .navbar {
+        visibility: hidden;
+    }
+
+    .open .navbar {
+        visibility: visible;
+        position: relative;
+        top: 50px;
+        margin-left: 15%;
+        background-color: transparent;
+        flex-direction: column;
+        justify-content: left;
+       }
+       
+    #nav-link {
+        left: 0px;
+        padding: 10px;
+        margin-bottom: 45px;
+        font-size: 15px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        width: 70vw;
+        border-bottom: 2px solid rgb(235, 97, 43);
+         }
+
+    .open {
+        list-style: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 60vh;
+        background-color: darkgray;
+        
+    }
+
+    main {
+
+        width: 100vw;
+    }
+    main #infoApi {
+        justify-content: center;
+      
+    }
+
+    #titulo {
+        width: 80%;
+        font-size: 30px;
+        text-align:center;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    #imagen-brand {
+        width: 100vw;
+    }
+   
+    #frase-completa {
+        width: 100vw;
+    }
+
+    #contenedor-frases p {
+        width: 65%;
+        height: auto;
+    }
+
+
+
+
+
+
+}
+

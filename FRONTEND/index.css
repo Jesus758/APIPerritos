@@ -4,6 +4,7 @@
 * {
     box-sizing: border-box;
     
+    
 }
 
 body#pagRandom {
@@ -15,7 +16,7 @@ header#pagina3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%vw;
+    width: 100vw;
     margin: 0;
     
 }
@@ -26,7 +27,9 @@ body {
     margin: 0px;
 }
 
-header {
+/* Pagina 1 CSS de la pagina principal  tamaño Web normal */
+
+header  {
     background-color: white;
     top: 0px;
     height: 50px;
@@ -35,28 +38,44 @@ header {
 nav {
     display: flex;
     flex-direction: row;
+    position: absolute;
     height: 30px;
+    width: 100%;
     justify-content: space-around;
-
 }
+
+
 #nav-link {
     margin-top: 15px;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
+   
 }
+
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     background: rgba(117, 118, 122, 0.753);
     width: 100%;
     color: white;
     margin: 0px;
     height: auto;    
+    justify-content: center;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
 #infoApi {
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 #titulo {
@@ -66,22 +85,49 @@ main {
     font-family: 'Shadows Into Light', cursive;
   }
 
+  /* Card de la Pagina Principal */
+
+.card {
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 12.5px;
+    margin: 5px;
+    
+
+}
 .card img {
-    margin-top: 3rem;
+    
     height: 250px;
-    width: auto;
-    border-radius: 70%;
+    max-width: 100%;
     -webkit-box-shadow: 10px 10px 100px 20px rgba(255, 253, 253, 0.726), 0 0 40px rgba(230, 217, 217, 0.8) inset;
     -moz-box-shadow: 10px 10px 100px 20px rgba(255, 253, 253, 0.726), 0 0 40px rgba(230, 217, 217, 0.8) inset;
     box-shadow: 10px 10px 100px 20px rgba(255, 253, 253, 0.726), 0 0 40px rgba(230, 217, 217, 0.8) inset;    
+    
 }
-
 #imagen-brand {
     height: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 50vw;
+    border: 2px solid black;
+}
+#imagen-brand p {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
 }
 
+#frase-completa {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    border: 2px solid rgb(119, 7, 7);
+
+}
 #contenedor-frases {
     height: 300px;
     margin-top: 1rem;
@@ -102,6 +148,35 @@ main {
     background-color: white;
 
 }
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: rgba(58, 89, 156, 1);
+    color: rgb(231, 237, 238);
+    position: relative;
+    bottom: 0px;
+    padding: 20px;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: .1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+/* Fin de la pagina Principal */
+
+/* Inicio de la Pagina 2 */
+
 #pagRandom {
     display: flex;
     flex-direction: column;
@@ -212,28 +287,8 @@ img.responsive {
     margin-top: 2.5rem;
     justify-content: space-around;
 }
-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background: rgba(58, 89, 156, 1);
-    color: rgb(231, 237, 238);
-    position: fixed;
-    bottom: 0px;
-    padding: 20px;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%;
-}
 
-footer li {
-    list-style: none;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: .1rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-}
+
 
 /* Pagina 3 - de Razas  - Hoja de Estilo para esta pagina del sitio */
 
