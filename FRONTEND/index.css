@@ -154,7 +154,7 @@ footer {
     flex-wrap: nowrap;
     background: rgba(58, 89, 156, 1);
     color: rgb(231, 237, 238);
-    position: relative;
+    position: absolute;
     bottom: 0px;
     padding: 20px;
     justify-content: space-around;
