@@ -154,7 +154,7 @@ footer {
     flex-wrap: nowrap;
     background: rgba(58, 89, 156, 1);
     color: rgb(231, 237, 238);
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     padding: 20px;
     justify-content: space-around;
@@ -398,6 +398,8 @@ form select {
     /*para la pagina 1*/
     footer {
         flex-wrap: wrap;
+        position: relative;
+       
     }
 
     .container {
