@@ -69,7 +69,6 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
 }
 
 #infoApi {
@@ -112,7 +111,7 @@ main {
     justify-content: space-around;
     text-align: center;
     width: 50vw;
-    border: 2px solid black;
+    
 }
 #imagen-brand p {
     color: black;
@@ -125,8 +124,7 @@ main {
     display: flex;
     justify-content: center;
     width: 50vw;
-    border: 2px solid rgb(119, 7, 7);
-
+    
 }
 #contenedor-frases {
     height: 300px;
@@ -182,8 +180,8 @@ footer li {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    width: auto;
+    /*justify-content: center;*/
+    width: 100%;
     padding: 30px;
 }
 
@@ -397,6 +395,46 @@ form select {
       
     }
 
+    /*para la pagina 1*/
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    #imagen-brand {
+        flex-wrap: wrap;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .card {
+        width: 100%;
+       
+    }
+
+    /* Para la pagina 2 */
+
+    #pagRandom {
+        padding: 0px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*align-items: center;*/
+        justify-content: center;
+
+    }
+
+    
+    #Contenedor-mascotas {
+        width: 100vh;
+    }
+
+    #bloqueMascotas {
+        width: 150px;
+    }
     /* Para la pagina 3 */
 
    /* Del Header */
@@ -468,3 +506,4 @@ form select {
         max-height: 400px;
     }
   }
+
